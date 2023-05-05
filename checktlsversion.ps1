@@ -1,2 +1,2 @@
-echo ('TLS 1.3 : {0}, TLS 1.2 : {1}, TLS 1.1 : {2}, TLS 1.0 : {3}' -f ([Net.ServicePointManager]::SecurityProtocol.HasFlag([Net.SecurityProtocolType]::Tls13)), ([Net.ServicePointManager]::SecurityProtocol.HasFlag([Net.SecurityProtocolType]::Tls12)), ([Net.ServicePointManager]::SecurityProtocol.HasFlag([Net.SecurityProtocolType]::Tls11)), ([Net.ServicePointManager]::SecurityProtocol.HasFlag([Net.SecurityProtocolType]::Tls)))
+echo ('TLS 1.2 : {0}, TLS 1.1 : {1}, TLS 1.0 : {2}' -f ([Net.ServicePointManager]::SecurityProtocol.HasFlag([Net.SecurityProtocolType]::Tls12)), ([Net.ServicePointManager]::SecurityProtocol.HasFlag([Net.SecurityProtocolType]::Tls11)), ([Net.ServicePointManager]::SecurityProtocol.HasFlag([Net.SecurityProtocolType]::Tls)))
 exit
